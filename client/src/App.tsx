@@ -13,18 +13,18 @@ function App() {
   const slides = [
     {
       url: tuttu,
-      label: "slide 1",
-      subtitle: "her er slide 1",
+      label: "1",
+      subtitle: "1",
     },
     {
       url: tuttu3,
-      label: "slide 2",
-      subtitle: "her er slide 2",
+      label: "2",
+      subtitle: "3",
     },
     {
       url: qimmeq,
       label: "slide 3",
-      subtitle: "her er slide 3",
+      subtitle: "3",
     },
   ];
   return (
