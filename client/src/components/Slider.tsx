@@ -19,7 +19,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 8000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -40,9 +40,9 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
       <section className="w-full relative group">
         <main
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-          className="w-full h-[550px] rounded-[10px] bg-center bg-cover duration-500 px-[15px]"
+          className="w-full h-[550px] bg-center bg-cover duration-500 px-[15px]"
         >
-          <div className="absolute inset-0 rounded-[10px] bg-[#222] opacity-[30%]" />
+          <div className="absolute inset-0 bg-[#222] opacity-[30%]" />
           <div className="flex top-4 py-2 z-30 text-[#f0f0f0]">
             {slides.map((slide, slideIndex) => (
               <div
